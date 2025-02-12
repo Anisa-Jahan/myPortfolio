@@ -3,43 +3,86 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- font aewsome -->
+    <script src="https://kit.fontawesome.com/83cc78d2bd.js" crossorigin="anonymous"></script>
     <!-- Tailwind CSS + daisyUI -->
     <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.23/dist/full.min.css" rel="stylesheet" type="text/css" />
     <script src="https://cdn.tailwindcss.com"></script>
+    <!-- extrenal css -->
+     <link rel="stylesheet" href="css/style.css">
     <title>Anisa Jahan || Portfolio</title>
 </head>
 <body class="bg-black">
-    <nav class="container mx-auto px-12 bg-gray-900 text-white p-4">
-        <div class="container mx-auto flex justify-between items-center">
-            <a href="#" class="text-2xl font-bold">Anisa Jahan</a>
-            <button id="menu-btn" class="md:hidden focus:outline-none">
-                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
-                </svg>
-            </button>
-            <ul id="menu" class="hidden md:flex space-x-6">
-                <li><a href="#home" class="hover:text-gray-400">Home</a></li>
-                <li><a href="#about" class="hover:text-gray-400">About Me</a></li>
-                <li><a href="#services" class="hover:text-gray-400">Services</a></li>
-                <li><a href="#skills" class="hover:text-gray-400">Skills</a></li>
-                <li><a href="#projects" class="hover:text-gray-400">Projects</a></li>
-                <li><a href="#contact" class="hover:text-gray-400">Contact</a></li>
-            </ul>
-        </div>
-        <div id="mobile-menu" class="md:hidden hidden bg-gray-800 p-4">
-            <ul class="flex flex-col space-y-4 text-center">
-                <li><a href="#home" class="block hover:text-gray-400">Home</a></li>
-                <li><a href="#about" class="block hover:text-gray-400">About Me</a></li>
-                <li><a href="#services" class="block hover:text-gray-400">Services</a></li>
-                <li><a href="#skills" class="block hover:text-gray-400">Skills</a></li>
-                <li><a href="#projects" class="block hover:text-gray-400">Projects</a></li>
-                <li><a href="#contact" class="block hover:text-gray-400">Contact</a></li>
-            </ul>
-        </div>
-    </nav>
     <header>
-        
+        <!-- navbar -->
+        <nav class="container mx-auto px-12 bg-black text-white p-4">
+            <div class="container mx-auto flex justify-between items-center">
+                <a href="index.html" class="text-2xl font-bold hover:text-[#E6AA32]">Anisa Jahan</a>
+                <button id="menu-btn" class="md:hidden focus:outline-none">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
+                    </svg>
+                </button>
+                <ul id="menu" class="hidden md:flex space-x-6">
+                    <li><a href="#home" class="font-bold hover:text-[#E6AA32]">Home</a></li>
+                    <li><a href="#about-me" class="font-bold hover:text-[#E6AA32]">About Me</a></li>
+                    <li><a href="#services" class="font-bold hover:text-[#E6AA32]">Services</a></li>
+                    <li><a href="#skills" class="font-bold hover:text-[#E6AA32]">Skills</a></li>
+                    <li><a href="#projects" class="font-bold hover:text-[#E6AA32]">Projects</a></li>
+                    <li><a href="#contact" class="font-bold hover:text-[#E6AA32]">Contact</a></li>
+                </ul>
+            </div>
+            <div id="mobile-menu" class="md:hidden hidden bg-gray-800 p-4">
+                <ul class="flex flex-col space-y-4 text-center">
+                    <li><a href="#home" class="font-bold block hover:text-[#E6AA32]">Home</a></li>
+                    <li><a href="#about" class="font-bold block hover:text-[#E6AA32]">About Me</a></li>
+                    <li><a href="#services" class="font-bold block hover:text-[#E6AA32]">Services</a></li>
+                    <li><a href="#skills" class="font-bold block hover:text-[#E6AA32]">Skills</a></li>
+                    <li><a href="#projects" class="font-bold block hover:text-[#E6AA32]">Projects</a></li>
+                    <li><a href="#contact" class="font-bold block hover:text-[#E6AA32]">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+        <!-- introduction -->
+        <section class="container mx-auto px-12 mt-10">
+            <div class="h-[400px] flex justify-between">
+                <!-- left side (description)-->
+                <div class="w-[50%] h-[400px] space-y-8">
+                    <p class="text-white text-2xl font-bold">Hello!!</p>
+                    <h1 class="text-4xl font-bold text-white">THIS IS WEB DEVELOPER<br><span class="text-[#E6AA32]"> ANISA JAHAN</span></h1>
+                    <p class="text-white text-justify">I'm a passionate Front-End Web Developer crafting visually stunning and user-friendly web experiences. With expertise in HTML, CSS, JavaScript, and modern frameworks like Bootstrap, Tailwind CSS, I bring designs to life with seamless interactivity. I focus on clean, efficient code to build responsive and high-performance websites. Explore my work below, and learn more about me.</p>
+                    <div>
+                        <a href="#about-me"><button class="px-8 py-2 rounded-full btn-style">Read More</button></a>
+                        <a href="" class="text-white ps-4 hover:text-[#E6AA32]">View Projects <i class="fa-solid fa-arrow-right"></i></a>
+                    </div>
+                </div>
+                <!-- right side (image) -->
+                <div class="w-[45%] img-bg rounded-s-full">
+                    <img src="img/myImg.png" class="w-[450px] h-[400px] ps-[100px]" alt="">
+                </div>
+            </div>
+        </section>
     </header>
+
+    <main>
+        <section id="about-me" class="container mx-auto px-12 mt-10">
+            <div class="flex space-x-6">
+                <div class="w-[50%]">
+                    <img src="img/about-img.jpg" alt="Device image">
+                </div>
+                <div class="w-[45%] m-5 space-y-4">
+                    <h3 class="text-2xl text-[#E6AA32] font-bold">ABOUT ME</h3>
+                    <p class="text-white text-justify">I have a strong foundation in HTML, CSS, JavaScript, Tailwind CSS, Bootstrap, and DaisyUI, which I use to build responsive and visually appealing web interfaces. My goal is to continuously enhance my skills and stay up-to-date with modern web technologies.
+
+                        Currently, I am expanding my expertise by learning React.js and exploring Full-Stack Development. I enjoy solving challenges, improving user experience, and refining my coding techniques.
+                        
+                        In my journey so far, I have developed several front-end projects, which are featured in this portfolio. Each project reflects my dedication to clean code, smooth functionality, and a great user experience. I’m always eager to take on new challenges and grow as a developer!
+                        
+                        </p>
+                </div>
+            </div>
+        </section>
+    </main>
 
     <!-- js files -->
      <script src="js/scripts.js"></script>

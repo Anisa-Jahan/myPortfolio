@@ -1,0 +1,13 @@
+.img-bg{
+    background-image: linear-gradient(#17171A, #17171A00);
+}
+.btn-style{
+    color: black;
+    background-color: #E6AA32;
+    border: 2px solid #E6AA32;
+    font-weight: bold;
+}
+.btn-style:hover{
+    color: #E6AA32;
+    background-color: black;
+}
